@@ -185,7 +185,52 @@ n^{0.2} + 12(\lg n)^{24},~
 $$
 
 \ifnum\me<2
-\begin{solution}   INSERT YOUR SOLUTION HERE   \end{solution}
+\begin{solution}   \\
+
+$\log_5 n^{1+1/\log_2(\log_5(n))}$\\
+$s(n) = (1+\frac{1}{\log_2(\log_5(n))})(\log_2(\log_5(n)) )$ $\backslash$$\backslash$ by taking $s(n) = log_2(f(n))$\\
+$s(n) = \ \frac{\log_2(\log_5(n))}{\log_2(\log_5(n)} + log_2{(\log_5(n))} $\\
+$s(n) = \log_2(\log_5(n))$\\
+$f(n) = \log_5(n) = \textbf{log(n)} $ \\ 
+
+
+$\log_{10}(n!) + 3 n^3$\\
+$= n\log(n) + 3 n^3 $ $\backslash$$\backslash$ because $\log(n!) = \theta(n\log(n))$\\
+$= \mathbf{n^3}$\\
+
+$81^{\frac{1}{\log_n{\sqrt{3}}}} + 22$\\
+$s(n) = (\frac{1}{\log_n(\sqrt{3})})\log(81)$ $\backslash$$\backslash$  by taking $s(n) = \log(f(n))$\\
+$s(n) = \frac{1}{\frac{\log(\sqrt{5})}{\log(n)}}$$\backslash$$\backslash$  by change of base formula\\
+$s(n) = \log(n)$\\ 
+$f(n) = \mathbf{n}$\\
+
+$7n^{\frac{4}{3}} + 3 n $\\
+$= \mathbf{n^\frac{4}{3}}$ $\backslash$$\backslash$ highest order power\\
+
+$n^{\frac{n}{\log_2 n}+\frac{n}{\log_3 n}+\frac{n}{\log_4 n}}$\\
+$s(n) = (\frac{n}{\log_2(n)} + \frac{n}{\log_3(n)} + \frac{n}{\log_4(n)})\log_4(n)$ $\backslash$$\backslash$ by taking $s(n) = log_4(f(x)$\\
+$s(n) = \frac{n\log_4(n)}{\log_2(n)} + \frac{n\log_4(n)}{\log_3(n)} + \frac{n\log_4(n)}{\log_4(n)}$\\
+$s(n) = n$$\backslash$$\backslash$ by removing constants\\
+$log(f(x)) = n$\\
+$f(n) = \mathbf{c^n}$$\backslash$$\backslash$ where c is some constant\\
+
+$\frac{7n^3}{2} + 3 n$\\
+$= \frac{7}{2}n^3 + 3n$\\
+$= \mathbf{n^3}$\\
+
+$n^{0.2} + 12(\lg n)^{24}$\\
+$= lg(n)^{24}$$\backslash$$\backslash$ since the $n^0.2$ term goes to zero as n grows large\\
+$= \mathbf{lg(n)^{24}}$\\
+
+$15^{(3n - 7)/20}$\\
+$s(n) =(3n-7)lg(15)$ $\backslash$$\backslash$by taking $s(n) = lg(f(n)$\\ 
+$s(n) = 3n$\\
+$lg(f(n)) = 3n$\\
+$c^{lg(f(n))} = c^{3n}$\\
+$f(n) = \mathbf{c^{3n}}$
+
+
+\end{solution}
 \fi
 \item[(b)] (4 points) List the simple functions you derived in part
   (a) in the order of asymptotic growth, from the smallest to the
@@ -195,7 +240,11 @@ $$
 \ifnum\me=2
 	\fi
 \ifnum\me<2
-\begin{solution}   INSERT YOUR SOLUTION HERE   \end{solution}
+\begin{solution}  \\
+
+$\log{n}$, $lg(n)^{24}$, $n$,  $n^3$, $n^3$, $n^\frac{4}{3}$, $c^n$, $c^{3n}$    
+
+\end{solution}
 \fi
 \end{itemize}
 
